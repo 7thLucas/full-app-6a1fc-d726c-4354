@@ -16,31 +16,40 @@ export type TDefaultConfigurableData = {
   appName: string;
   logoUrl: string;
   brandColor: TBrandColor;
-  // Mirror new schema fields here. Example:
-  //   maxItemsPerPage?: number;
-  //   enableNotifications?: boolean;
-  //   featuredCategories?: string[];
+  tagline?: string;
+  startPrompt?: string;
+  controlsHint?: string;
+  skyColor?: string;
+  midBackgroundColor?: string;
+  groundColor?: string;
+  coinColor?: string;
+  gemColor?: string;
+  enemyColor?: string;
+  enableMusic?: boolean;
+  enableSfx?: boolean;
+  winMessage?: string;
+  creditsText?: string;
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
-  appName: "FILL_APP_NAME_HERE",
+  appName: "Glimwood",
   logoUrl: "FILL_LOGO_URL_HERE",
   brandColor: {
-    primary: "FILL_PRIMARY_COLOR_HERE",
-    secondary: "FILL_SECONDARY_COLOR_HERE",
-    accent: "FILL_ACCENT_COLOR_HERE",
+    primary: "#4ade80",
+    secondary: "#16352d",
+    accent: "#fbbf24",
   },
-  // ─────────────────────────────────────────────────────────────────────
-  // Add new field defaults here. See RULES.md §5 for per-type shape.
-  // Required branding fields → use the FILL_X_HERE placeholder pattern.
-  // Optional/typed defaults → real value with a "// fill it here" comment:
-  //
-  //   maxItemsPerPage: 12,                     // fill it here
-  //   enableNotifications: true,               // fill it here
-  //   featuredCategories: [],                  // fill it here
-  //   defaultLanguage: "en",                   // must match enum options
-  //   launchDate: "2025-01-01T00:00:00.000Z",  // ISO-8601
-  //   heroImage: "",                           // resolved URL after upload
-  //   galleryImages: [],                       // array of resolved URLs
-  // ─────────────────────────────────────────────────────────────────────
+  tagline: "A pixel-art platformer through the glimmering forest.",
+  startPrompt: "Press SPACE to Start",
+  controlsHint: "Arrows / WASD to move  •  SPACE to jump  •  R to restart",
+  skyColor: "#1a1432",
+  midBackgroundColor: "#3b2a5c",
+  groundColor: "#16352d",
+  coinColor: "#fbbf24",
+  gemColor: "#22d3ee",
+  enemyColor: "#ef4444",
+  enableMusic: true,
+  enableSfx: true,
+  winMessage: "Level Complete!",
+  creditsText: "A Glimwood demo  •  Made with pixels and love",
 };
